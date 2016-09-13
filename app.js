@@ -4,10 +4,15 @@ window.onload = function(){
   var nav = document.getElementById('nav');
   console.log(nav);
   // create loop to add 7 buttons
-  for (var x = 0; x < 7; x++) {
+  for (var x = 1; x <= 7; x++) {
     var buttons = document.createElement('button');
-    buttons.className = "buttons";
+    buttons.className = "buttonstyle";
+    buttons.id = "b" + x;
     nav.appendChild(buttons);
+
+    buttons.addEventListener("click", function() {
+      console.log('Hello World');
+    });
   };
   // declare container variable
   var container = document.getElementById('container');
@@ -24,5 +29,10 @@ window.onload = function(){
       column.appendChild(token);
     };
   };
-  // nav.addEventListener("click", buttons);
+  // var piece = [];
+  // var addToken = function() {
+  //   piece[i]++;
+  // };
+
+
 };

@@ -3,7 +3,8 @@
   height: 343px;
   width: 448px;
   margin: 0% auto;
-  position: relative;
+  border-radius: 5%
+  /*position: relative;*/
 }
 .token {
   height: 50px;
@@ -26,11 +27,14 @@
   /*border: 1px solid black;*/
   margin: 1em auto;
 }
-.buttons {
+.buttonstyle {
   height: 2em;
   width: 30px;
   background: yellow;
   margin: 6px 17px;
   border-radius: 20%;
   display: inline-block;
+}
+.buttonstyle:hover {
+  background: red;
 }
