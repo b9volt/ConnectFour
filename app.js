@@ -1,5 +1,12 @@
 window.onload = function(){
   console.log('heeloooo');
+  var nav = document.getElementById('nav');
+  console.log(nav);
+  for (var x = 0; x < 7; x++) {
+    var buttons = document.createElement('button');
+    buttons.className = "buttons";
+    nav.appendChild(buttons);
+  };
   // declare container variable
   var container = document.getElementById('container');
   console.log(container);

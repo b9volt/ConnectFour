@@ -2,7 +2,8 @@
   background: yellow;
   height: 343px;
   width: 448px;
-  margin: auto;
+  margin: 0% auto;
+  position: relative;
 }
 .token {
   height: 50px;
@@ -17,5 +18,18 @@
   border: 1px solid black;
   padding: 3px;
   margin: auto;
+  display: inline-block;
+}
+#nav {
+  height: 2em;
+  width: 448px;
+  border: 1px solid black;
+  margin: 1em auto;
+}
+.buttons {
+  height: 2em;
+  width: 50px;
+  background: yellow;
+  margin: 6px 7px;
   display: inline-block;
 }
