@@ -1,6 +1,21 @@
-.board {
+#container {
+  background: yellow;
+  height: 343px;
+  width: 448px;
+  margin: auto;
+}
+.token {
   height: 50px;
   width: 50px;
   background: blue;
-  border-radius: 50%
+  border-radius: 50%;
+  margin: 5px 3px;
+}
+.column {
+  height: 335px;
+  width: 56px;
+  border: 1px solid black;
+  padding: 3px;
+  margin: auto;
+  display: inline-block;
 }
