@@ -15,7 +15,7 @@
 .column {
   height: 335px;
   width: 56px;
-  border: 1px solid black;
+  border: 1px solid white;
   padding: 3px;
   margin: auto;
   display: inline-block;
@@ -23,13 +23,14 @@
 #nav {
   height: 2em;
   width: 448px;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   margin: 1em auto;
 }
 .buttons {
   height: 2em;
-  width: 50px;
+  width: 30px;
   background: yellow;
-  margin: 6px 7px;
+  margin: 6px 17px;
+  border-radius: 20%;
   display: inline-block;
 }

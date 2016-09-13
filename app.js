@@ -1,7 +1,9 @@
 window.onload = function(){
   console.log('heeloooo');
+  // declare nav variable
   var nav = document.getElementById('nav');
   console.log(nav);
+  // create loop to add 7 buttons
   for (var x = 0; x < 7; x++) {
     var buttons = document.createElement('button');
     buttons.className = "buttons";
@@ -22,4 +24,5 @@ window.onload = function(){
       column.appendChild(token);
     };
   };
+  // nav.addEventListener("click", buttons);
 };

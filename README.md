@@ -6,6 +6,13 @@ https://wireframe.cc/xBysA4
 
 Create board =
 
+Navigation:
+Declare nav variable.
+Create loop to add 7 buttons.
+Declare variable for buttons and create a button.
+Add class to buttons.
+Append the button to the nav.
+
 Columns:
 Declare container variable.
 Create loop to add 7 columns.
