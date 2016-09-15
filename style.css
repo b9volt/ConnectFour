@@ -38,7 +38,7 @@
 .buttonstyle:hover {
   background: red;
 }
-#red {
+.red {
   height: 50px;
   width: 50px;
   background: red;

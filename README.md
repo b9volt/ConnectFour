@@ -62,9 +62,18 @@ Getting it into the right column
 
 Getting it into the right row
 
+Notes from Derek=>
 button should have an id of A,B,C
 when you click a button the id should be saved as a variable,
 and all elements with class name of the button id variable  should be grabbed in an array
 getElementsByClassName('className') returns array
 start at the bottom, and work your way up until you find
 a blue circle, then change it to red
+
+buttons.addEventListener("click", function(){
+  this. get its id
+  change color(id)
+});
+
+grab all the buttons
+add event listener that reads the id, then calls a function
