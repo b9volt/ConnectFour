@@ -43,19 +43,45 @@ window.onload = function() {
       win();
     };
 
-    var win = function() {
-      var column1 = document.getElementById('c1');
-      console.log("I am Column 1!")
-      for (r = 0; c1)
-        console.log("win function running")
-      if (c1 == 1 > 3) {
-        console.log("Red Wins!")
-      } else if (player == 0 > 3) {
-        console.log("Black Wins!")
-      } else {
-        player = 1;
+  var win = function() {
+    var column1 = document.getElementById('c1');
+    var redwins = 0;
+    var blackwins = 0;
+    // console.log("I am: ", column1.children);
+    // console.log("I am the chilren of column1: ", column1.children);
+    for (var w = column1.children.length -1; w >= 0; w--) {
+      // console.log("What is: " ,column1.children[w]);
+      if (column1.children[w].classList.contains('red')) {
+        // redwins = redwins + 1;
+        redwins++
+        console.log("I am red" ,redwins);
+        if (redwins == 4) {
+          console.log("Red Wins!")
+        }
+
+      } else if (column1.children[w].classList.contains('black')) {
+          redwins = 0;
+          console.log("redwins is reset");
       }
-    }
+
+      if (column1.children[w].classList.contains('black')) {
+        // redwins = redwins + 1;
+        blackwins++
+        console.log("I am black" ,blackwins);
+        if (blackwins == 4) {
+          console.log("Black Wins!")
+        }
+
+      } else if (column1.children[w].classList.contains('red')) {
+          blackwins = 0;
+          console.log("blackwins is reset");
+      } else {
+           console.log("space is empty");
+      }; // end if statement
+
+    } // end for loop
+
+  }; // end win function
 
   // create loop to add 7 buttons
   for (var x = 1; x <= 7; x++) {
@@ -86,5 +112,4 @@ window.onload = function() {
     };
   };
 
-// close window.onload
-};
+}; // close window.onload
