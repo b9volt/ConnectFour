@@ -242,7 +242,7 @@ window.onload = function() {
           break;
         }
       } else if (c7.children[i].classList.contains('red')) {
-          blackwins7 = 0;
+          yellowwins7 = 0;
           // console.log("yellowwins7 is reset");
       } else {
           //  console.log("space is empty");
@@ -274,8 +274,7 @@ window.onload = function() {
   // declare container variable
   var container = document.getElementById('container');
   // console.log(container);
-  var playerTurn = document.getElementById('playerTurn');
-  // var logo = document.getElementById('logo');
+  // var playerTurn = document.getElementById('playerTurn');
 
   // create loop to add 7 columns
   for (var i = 1; i <= 7; i++) {
