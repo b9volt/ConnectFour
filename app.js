@@ -1,87 +1,255 @@
 window.onload = function() {
-  console.log('heeloooo');
   // declare nav variable
   var nav = document.getElementById('nav');
-  console.log(nav);
+  // console.log(nav);
   // declare player variable.
   var player = 1;
   // function for buttonClick to be called when user clicks a button
-
   var buttonClick = function() {
       // token.classList.add("red");
       // console.log("red");
-      console.log("This is button id " + this.id);
+      // console.log("This is button id " + this.id);
       // this.id calls on the button that is pressed
       // console.log(this.id.charAt(1));
       // charAt(1) calls the index of the button
       // By adding the id of 'c', it also references its coresponding column
       var column = document.getElementById('c' + this.id.charAt(1));
-      console.log('These are the columns children: ', column.children);
+      // console.log('These are the columns children: ', column.children);
       // console.log('This is the last child of the column: ', column.children[column.children.length - 1]);
       // var lastChild = column.children[column.children.length - 1];
       // console.log(lastChild);
       // lastChild.classList.add('red');
       // Loop backwards by accessing last child with column.length - 1.
-      for (var p = column.children.length -1; p >= 0; p--){
-      console.log(p);
-      if (column.children[p].classList.contains('red') || column.children[p].classList.contains('black')) {
-        continue;
-      } else {
-        if (player == 1) {
-          column.children[p].classList.add('red');
-          player = 0;
+      for (var i = column.children.length -1; i >= 0; i--) {
+        // console.log(p);
+        if (column.children[i].classList.contains('red') || column.children[i].classList.contains('black')) {
+          continue;
         } else {
-          column.children[p].classList.add('black');
-          player = 1;
-        }
-        // column.children[p].classList.add('red');
-        break;
-      }
-    }
+          if (player == 1) {
+            column.children[i].classList.add('red');
+            player = 0;
+          } else {
+            column.children[i].classList.add('black');
+            player = 1;
+          }
+          break;
+        } // end if statement
+      } // end for loop
+      // console.log(player);
 
-        console.log(player);
-      win();
-    };
+      verticalWin();
+    }; // end buttonClick function
 
-  var win = function() {
-    var column1 = document.getElementById('c1');
-    var redwins = 0;
-    var blackwins = 0;
-    // console.log("I am: ", column1.children);
-    // console.log("I am the chilren of column1: ", column1.children);
-    for (var w = column1.children.length -1; w >= 0; w--) {
-      // console.log("What is: " ,column1.children[w]);
-      if (column1.children[w].classList.contains('red')) {
-        // redwins = redwins + 1;
-        redwins++
-        console.log("I am red" ,redwins);
-        if (redwins == 4) {
+  var verticalWin = function() {
+    var redwins1 = 0, redwins2 = 0, redwins3 = 0, redwins4 = 0,
+        redwins5 = 0, redwins6 = 0, redwins7 = 0;
+    var blackwins1 = 0, blackwins2 = 0, blackwins3 = 0, blackwins4 = 0,
+        blackwins5 = 0, blackwins6 = 0,  blackwins7 = 0;
+
+    for (var i = c1.children.length -1; i >= 0; i--) {
+      if (c1.children[i].classList.contains('red')) {
+        redwins1++
+        // console.log("I am red", redwins1);
+        if (redwins1 === 4) {
           console.log("Red Wins!")
+          break;
         }
-
-      } else if (column1.children[w].classList.contains('black')) {
-          redwins = 0;
-          console.log("redwins is reset");
       }
-
-      if (column1.children[w].classList.contains('black')) {
-        // redwins = redwins + 1;
-        blackwins++
-        console.log("I am black" ,blackwins);
-        if (blackwins == 4) {
+      if (c1.children[i].classList.contains('black')) {
+          redwins1 = 0;
+          // console.log("redwins1 is reset");
+      }
+      if (c1.children[i].classList.contains('black')) {
+        blackwins1++
+        // console.log("I am black", blackwins1);
+        if (blackwins1 === 4) {
           console.log("Black Wins!")
+          break;
         }
-
-      } else if (column1.children[w].classList.contains('red')) {
-          blackwins = 0;
-          console.log("blackwins is reset");
+      } else if (c1.children[i].classList.contains('red')) {
+          blackwins1 = 0;
+          // console.log("blackwins1 is reset");
       } else {
-           console.log("space is empty");
+          //  console.log("space is empty");
+           break;
       }; // end if statement
+    }; // end for loop
 
+    for (var i = c2.children.length -1; i >= 0; i--) {
+      if (c2.children[i].classList.contains('red')) {
+        redwins2++
+        // console.log("I am red", redwins2);
+        if (redwins2 === 4) {
+          console.log("Red Wins!")
+          break;
+        }
+      }
+      if (c2.children[i].classList.contains('black')) {
+          redwins2 = 0;
+          // console.log("redwins2 is reset");
+      }
+      if (c2.children[i].classList.contains('black')) {
+        blackwins2++
+        // console.log("I am black", blackwins2);
+        if (blackwins2 === 4) {
+          console.log("Black Wins!")
+          break;
+        }
+      } else if (c2.children[i].classList.contains('red')) {
+          blackwins2 = 0;
+          // console.log("blackwins is reset");
+      } else {
+          //  console.log("space is empty");
+          break;
+      }; // end if statement
     } // end for loop
 
-  }; // end win function
+    for (var i = c3.children.length -1; i >= 0; i--) {
+      if (c3.children[i].classList.contains('red')) {
+        redwins3++
+        // console.log("I am red", redwins3);
+        if (redwins3 === 4) {
+          console.log("Red Wins!")
+          break;
+        }
+      }
+      if (c3.children[i].classList.contains('black')) {
+          redwins3 = 0;
+          // console.log("redwins3 is reset");
+      }
+      if (c3.children[i].classList.contains('black')) {
+        blackwins3++
+        // console.log("I am black", blackwins3);
+        if (blackwins3 === 4) {
+          console.log("Black Wins!")
+          break;
+        }
+      } else if (c3.children[i].classList.contains('red')) {
+          blackwins3 = 0;
+          // console.log("blackwins3 is reset");
+      } else {
+          //  console.log("space is empty");
+          break;
+      }; // end if statement
+    } // end for loop
+
+    for (var i = c4.children.length -1; i >= 0; i--) {
+      if (c4.children[i].classList.contains('red')) {
+        redwins4++
+        // console.log("I am red", redwins4);
+        if (redwins4 === 4) {
+          console.log("Red Wins!")
+          break;
+        }
+      }
+      if (c4.children[i].classList.contains('black')) {
+          redwins4 = 0;
+          // console.log("redwins4 is reset");
+      }
+      if (c4.children[i].classList.contains('black')) {
+        blackwins4++
+        // console.log("I am black", blackwins4);
+        if (blackwins4 === 4) {
+          console.log("Black Wins!")
+          break;
+        }
+      } else if (c4.children[i].classList.contains('red')) {
+          blackwins4 = 0;
+          // console.log("blackwins4 is reset");
+      } else {
+          //  console.log("space is empty");
+          break;
+      }; // end if statement
+    } // end for loop
+
+    for (var i = c5.children.length -1; i >= 0; i--) {
+      if (c5.children[i].classList.contains('red')) {
+        redwins5++
+        // console.log("I am red", redwins5);
+        if (redwins5 === 4) {
+          console.log("Red Wins!")
+          break;
+        }
+      }
+      if (c5.children[i].classList.contains('black')) {
+          redwins5 = 0;
+          // console.log("redwins5 is reset");
+      }
+      if (c5.children[i].classList.contains('black')) {
+        blackwins5++
+        // console.log("I am black", blackwins5);
+        if (blackwins5 === 4) {
+          console.log("Black Wins!")
+          break;
+        }
+      } else if (c5.children[i].classList.contains('red')) {
+          blackwins5 = 0;
+          // console.log("blackwins5 is reset");
+      } else {
+          //  console.log("space is empty");
+          break;
+      }; // end if statement
+    } // end for loop
+
+    for (var i = c6.children.length -1; i >= 0; i--) {
+      if (c6.children[i].classList.contains('red')) {
+        redwins6++
+        // console.log("I am red", redwins6);
+        if (redwins6 === 4) {
+          console.log("Red Wins!")
+          break;
+        }
+      }
+      if (c6.children[i].classList.contains('black')) {
+          redwins6 = 0;
+          // console.log("redwins6 is reset");
+      }
+      if (c6.children[i].classList.contains('black')) {
+        blackwins6++
+        // console.log("I am black", blackwins6);
+        if (blackwins6 === 4) {
+          console.log("Black Wins!")
+          break;
+        }
+      } else if (c6.children[i].classList.contains('red')) {
+          blackwins6 = 0;
+          // console.log("blackwins6 is reset");
+      } else {
+          //  console.log("space is empty");
+          break;
+      }; // end if statement
+    } // end for loop
+
+    for (var i = c7.children.length -1; i >= 0; i--) {
+      if (c7.children[i].classList.contains('red')) {
+        redwins7++
+        // console.log("I am red", redwins7);
+        if (redwins7 === 4) {
+          console.log("Red Wins!")
+          break;
+        }
+      }
+      if (c7.children[i].classList.contains('black')) {
+          redwins7 = 0;
+          // console.log("redwins7 is reset");
+      }
+      if (c7.children[i].classList.contains('black')) {
+        blackwins7++
+        // console.log("I am black", blackwins7);
+        if (blackwins7 === 4) {
+          console.log("Black Wins!")
+          break;
+        }
+      } else if (c7.children[i].classList.contains('red')) {
+          blackwins7 = 0;
+          // console.log("blackwins7 is reset");
+      } else {
+          //  console.log("space is empty");
+          break;
+      }; // end if statement
+    } // end for loop
+
+  }; // end verticalWin function
 
   // create loop to add 7 buttons
   for (var x = 1; x <= 7; x++) {
@@ -94,7 +262,7 @@ window.onload = function() {
 
   // declare container variable
   var container = document.getElementById('container');
-  console.log(container);
+  // console.log(container);
 
   // create loop to add 7 columns
   for (var i = 1; i <= 7; i++) {
@@ -107,7 +275,7 @@ window.onload = function() {
     for (var j = 1; j <= 6; j++) {
       var token = document.createElement('div');
       token.className = "token";
-      // token.id = j;
+      token.id = "t" + j;
       column.appendChild(token);
     };
   };
