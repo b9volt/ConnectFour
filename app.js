@@ -226,7 +226,7 @@ window.onload = function() {
         redwins7++
         // console.log("I am red", redwins7);
         if (redwins7 === 4) {
-          return("Red Wins!")
+          alert("Red Wins!")
           break;
         }
       }
@@ -238,11 +238,11 @@ window.onload = function() {
         yellowwins7++
         // console.log("I am yellow", yellowwins7);
         if (yellowwins7 === 4) {
-          return("Yellow Wins!")
+          alert("Yellow Wins!")
           break;
         }
       } else if (c7.children[i].classList.contains('red')) {
-          blackwins7 = 0;
+          yellowwins7 = 0;
           // console.log("yellowwins7 is reset");
       } else {
           //  console.log("space is empty");
