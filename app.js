@@ -22,14 +22,14 @@ window.onload = function() {
       // Loop backwards by accessing last child with column.length - 1.
       for (var i = column.children.length -1; i >= 0; i--) {
         // console.log(p);
-        if (column.children[i].classList.contains('red') || column.children[i].classList.contains('black')) {
+        if (column.children[i].classList.contains('red') || column.children[i].classList.contains('yellow')) {
           continue;
         } else {
           if (player == 1) {
             column.children[i].classList.add('red');
             player = 0;
           } else {
-            column.children[i].classList.add('black');
+            column.children[i].classList.add('yellow');
             player = 1;
           }
           break;
@@ -38,37 +38,38 @@ window.onload = function() {
       // console.log(player);
 
       verticalWin();
+      // horizontalWin();
     }; // end buttonClick function
 
   var verticalWin = function() {
     var redwins1 = 0, redwins2 = 0, redwins3 = 0, redwins4 = 0,
         redwins5 = 0, redwins6 = 0, redwins7 = 0;
-    var blackwins1 = 0, blackwins2 = 0, blackwins3 = 0, blackwins4 = 0,
-        blackwins5 = 0, blackwins6 = 0,  blackwins7 = 0;
+    var yellowwins1 = 0, yellowwins2 = 0, yellowwins3 = 0, yellowwins4 = 0,
+        yellowwins5 = 0, yellowwins6 = 0,  yellowwins7 = 0;
 
     for (var i = c1.children.length -1; i >= 0; i--) {
       if (c1.children[i].classList.contains('red')) {
         redwins1++
         // console.log("I am red", redwins1);
         if (redwins1 === 4) {
-          console.log("Red Wins!")
+          alert("Red Wins!")
           break;
         }
       }
-      if (c1.children[i].classList.contains('black')) {
+      if (c1.children[i].classList.contains('yellow')) {
           redwins1 = 0;
           // console.log("redwins1 is reset");
       }
-      if (c1.children[i].classList.contains('black')) {
-        blackwins1++
-        // console.log("I am black", blackwins1);
-        if (blackwins1 === 4) {
-          console.log("Black Wins!")
+      if (c1.children[i].classList.contains('yellow')) {
+        yellowwins1++
+        // console.log("I am yellow", yellowwins1);
+        if (yellowwins1 === 4) {
+          alert("Yellow Wins!")
           break;
         }
       } else if (c1.children[i].classList.contains('red')) {
-          blackwins1 = 0;
-          // console.log("blackwins1 is reset");
+          yellowwins1 = 0;
+          // console.log("yellowwins1 is reset");
       } else {
           //  console.log("space is empty");
            break;
@@ -80,24 +81,24 @@ window.onload = function() {
         redwins2++
         // console.log("I am red", redwins2);
         if (redwins2 === 4) {
-          console.log("Red Wins!")
+          alert("Red Wins!")
           break;
         }
       }
-      if (c2.children[i].classList.contains('black')) {
+      if (c2.children[i].classList.contains('yellow')) {
           redwins2 = 0;
           // console.log("redwins2 is reset");
       }
-      if (c2.children[i].classList.contains('black')) {
-        blackwins2++
-        // console.log("I am black", blackwins2);
-        if (blackwins2 === 4) {
-          console.log("Black Wins!")
+      if (c2.children[i].classList.contains('yellow')) {
+        yellowwins2++
+        // console.log("I am yellow", yellowwins2);
+        if (yellowwins2 === 4) {
+          alert("Yellow Wins!")
           break;
         }
       } else if (c2.children[i].classList.contains('red')) {
-          blackwins2 = 0;
-          // console.log("blackwins is reset");
+          yellowwins2 = 0;
+          // console.log("yellowwins is reset");
       } else {
           //  console.log("space is empty");
           break;
@@ -109,24 +110,24 @@ window.onload = function() {
         redwins3++
         // console.log("I am red", redwins3);
         if (redwins3 === 4) {
-          console.log("Red Wins!")
+          alert("Red Wins!")
           break;
         }
       }
-      if (c3.children[i].classList.contains('black')) {
+      if (c3.children[i].classList.contains('yellow')) {
           redwins3 = 0;
           // console.log("redwins3 is reset");
       }
-      if (c3.children[i].classList.contains('black')) {
-        blackwins3++
-        // console.log("I am black", blackwins3);
-        if (blackwins3 === 4) {
-          console.log("Black Wins!")
+      if (c3.children[i].classList.contains('yellow')) {
+        yellowwins3++
+        // console.log("I am yellow", yellowwins3);
+        if (yellowwins3 === 4) {
+          alert("Yellow Wins!")
           break;
         }
       } else if (c3.children[i].classList.contains('red')) {
-          blackwins3 = 0;
-          // console.log("blackwins3 is reset");
+          yellowwins3 = 0;
+          // console.log("yellowwins3 is reset");
       } else {
           //  console.log("space is empty");
           break;
@@ -138,7 +139,7 @@ window.onload = function() {
         redwins4++
         // console.log("I am red", redwins4);
         if (redwins4 === 4) {
-          console.log("Red Wins!")
+          alert("Red Wins!")
           break;
         }
       }
@@ -146,16 +147,16 @@ window.onload = function() {
           redwins4 = 0;
           // console.log("redwins4 is reset");
       }
-      if (c4.children[i].classList.contains('black')) {
-        blackwins4++
-        // console.log("I am black", blackwins4);
-        if (blackwins4 === 4) {
-          console.log("Black Wins!")
+      if (c4.children[i].classList.contains('yellow')) {
+        yellowwins4++
+        // console.log("I am yellow", yellowwins4);
+        if (yellowwins4 === 4) {
+          alert("Yellow Wins!")
           break;
         }
       } else if (c4.children[i].classList.contains('red')) {
-          blackwins4 = 0;
-          // console.log("blackwins4 is reset");
+          yellowwins4 = 0;
+          // console.log("yellowwins4 is reset");
       } else {
           //  console.log("space is empty");
           break;
@@ -167,24 +168,24 @@ window.onload = function() {
         redwins5++
         // console.log("I am red", redwins5);
         if (redwins5 === 4) {
-          console.log("Red Wins!")
+          alert("Red Wins!")
           break;
         }
       }
-      if (c5.children[i].classList.contains('black')) {
+      if (c5.children[i].classList.contains('yellow')) {
           redwins5 = 0;
           // console.log("redwins5 is reset");
       }
-      if (c5.children[i].classList.contains('black')) {
-        blackwins5++
-        // console.log("I am black", blackwins5);
-        if (blackwins5 === 4) {
-          console.log("Black Wins!")
+      if (c5.children[i].classList.contains('yellow')) {
+        yellowwins5++
+        // console.log("I am yellow", yellowwins5);
+        if (yellowwins5 === 4) {
+          alert("Yellow Wins!")
           break;
         }
       } else if (c5.children[i].classList.contains('red')) {
-          blackwins5 = 0;
-          // console.log("blackwins5 is reset");
+          yellowwins5 = 0;
+          // console.log("yellowwins5 is reset");
       } else {
           //  console.log("space is empty");
           break;
@@ -196,24 +197,24 @@ window.onload = function() {
         redwins6++
         // console.log("I am red", redwins6);
         if (redwins6 === 4) {
-          console.log("Red Wins!")
+          alert("Red Wins!")
           break;
         }
       }
-      if (c6.children[i].classList.contains('black')) {
+      if (c6.children[i].classList.contains('yellow')) {
           redwins6 = 0;
           // console.log("redwins6 is reset");
       }
-      if (c6.children[i].classList.contains('black')) {
-        blackwins6++
-        // console.log("I am black", blackwins6);
-        if (blackwins6 === 4) {
-          console.log("Black Wins!")
+      if (c6.children[i].classList.contains('yellow')) {
+        yellowwins6++
+        // console.log("I am yellow", yellowwins6);
+        if (yellowwins6 === 4) {
+          alert("Yellow Wins!")
           break;
         }
       } else if (c6.children[i].classList.contains('red')) {
-          blackwins6 = 0;
-          // console.log("blackwins6 is reset");
+          yellowwins6 = 0;
+          // console.log("yellowwins6 is reset");
       } else {
           //  console.log("space is empty");
           break;
@@ -225,24 +226,24 @@ window.onload = function() {
         redwins7++
         // console.log("I am red", redwins7);
         if (redwins7 === 4) {
-          console.log("Red Wins!")
+          return("Red Wins!")
           break;
         }
       }
-      if (c7.children[i].classList.contains('black')) {
+      if (c7.children[i].classList.contains('yellow')) {
           redwins7 = 0;
           // console.log("redwins7 is reset");
       }
-      if (c7.children[i].classList.contains('black')) {
-        blackwins7++
-        // console.log("I am black", blackwins7);
-        if (blackwins7 === 4) {
-          console.log("Black Wins!")
+      if (c7.children[i].classList.contains('yellow')) {
+        yellowwins7++
+        // console.log("I am yellow", yellowwins7);
+        if (yellowwins7 === 4) {
+          return("Yellow Wins!")
           break;
         }
       } else if (c7.children[i].classList.contains('red')) {
           blackwins7 = 0;
-          // console.log("blackwins7 is reset");
+          // console.log("yellowwins7 is reset");
       } else {
           //  console.log("space is empty");
           break;
@@ -250,6 +251,16 @@ window.onload = function() {
     } // end for loop
 
   }; // end verticalWin function
+
+  // var horizontalWin = function() {
+  //   // var row = document.getElementById('t' + this.id.charAt(1));
+  //   var hRedwins = 0;
+  //   var hBlackwins = 0;
+  //   // var row = document.getElementById('t');
+  //   for (var j = t6.length -1; j >= 0; j--) {
+  //     console.log(t6);
+  //   }
+  // } // end horizontalWin function
 
   // create loop to add 7 buttons
   for (var x = 1; x <= 7; x++) {
@@ -263,6 +274,8 @@ window.onload = function() {
   // declare container variable
   var container = document.getElementById('container');
   // console.log(container);
+  var playerTurn = document.getElementById('playerTurn');
+  // var logo = document.getElementById('logo');
 
   // create loop to add 7 columns
   for (var i = 1; i <= 7; i++) {
