@@ -1,55 +1,74 @@
 body {
-  background: #BDBDBD url("http://i.imgur.com/z9i71DW.png");
+  /*background: #BDBDBD url("http://i.imgur.com/z9i71DW.png");
   background-repeat: no-repeat;
-  background-position: left top;
+  background-position: left top;*/
 }
 
 #container {
   background: blue;
-  height: 343px;
-  width: 448px;
-  margin: 0% auto;
+  height: 510px;
+  width: 580px;
+  margin: 10px auto;
   border-radius: 5%;
   box-shadow: 5px 5px 8px #888888;
 }
+
+.column {
+  height: 500px;
+  width: 70px;
+  margin-left: 10px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
 .token {
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
   background: #BDBDBD;
   border-radius: 50%;
-  margin: 5px 3px;
+  margin-top: 10px;
+  margin-left: 5px;
   box-shadow: inset -2px -2px 3px rgba(0,0,0,0.5), /*bottom internal shadow*/
-inset 0 1px 1px rgba(255,255,255,1); /*top internal highlight*/
+  inset 0 1px 1px rgba(255,255,255,1); /*top internal highlight*/
 }
+
 .red {
   background: #ff0000;
   box-shadow:0px 0px 10px 5px #b30000 inset;
   }
+
 .yellow {
   background: #ffff00;
   box-shadow:0px 0px 10px 5px #b3b300 inset;
 }
-.column {
-  height: 345px;
-  width: 56px;
-  padding: 4px;
-  margin: auto;
-  display: inline-block;
-}
+
 #nav {
-  height: 2em;
-  width: 448px;
-  margin: 1em auto;
+  height: 70px;
+  width: 580px;
+  margin: 0 auto;
 }
+
+.navbar {
+  margin-left: 5px;
+  margin-top: 2em;
+  height: 70px;
+  width: 580px;
+}
+
 .buttonstyle {
-  height: 2em;
-  width: 30px;
+  height: 70px;
+  width: 70px;
+  border: none;
   background: #ffff00;
-  margin: 6px 17px;
-  border-radius: 20%;
+  margin-left: 10px;
+  border-radius: 50%;
   display: inline-block;
-  box-shadow: 3px 3px 6px #888888;
+  box-shadow: inset -2px -2px 3px rgba(0,0,0,0.5), /*bottom internal shadow*/
+  inset 0 1px 1px rgba(255,255,255,1); /*top internal highlight*/
 }
+
 .buttonstyle:hover {
   background: #ff0000;
+  box-shadow: inset -2px -2px 3px rgba(0,0,0,0.5), /*bottom internal shadow*/
+  inset 0 1px 1px rgba(255,255,255,1); /*top internal highlight*/
 }

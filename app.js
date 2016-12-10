@@ -1,7 +1,5 @@
 window.onload = function() {
-  // declare nav variable
-  var nav = document.getElementById('nav');
-  // console.log(nav);
+
   // declare player variable.
   var player = 1;
   // function for buttonClick to be called when user clicks a button
@@ -253,28 +251,39 @@ window.onload = function() {
   }; // end verticalWin function
 
   // var horizontalWin = function() {
+  //   var redwins1 = 0, redwins2 = 0, redwins3 = 0, redwins4 = 0,
+  //       redwins5 = 0, redwins6 = 0, redwins7 = 0;
+  //   var yellowwins1 = 0, yellowwins2 = 0, yellowwins3 = 0, yellowwins4 = 0,
+  //       yellowwins5 = 0, yellowwins6 = 0,  yellowwins7 = 0;
   //   // var row = document.getElementById('t' + this.id.charAt(1));
-  //   var hRedwins = 0;
-  //   var hBlackwins = 0;
   //   // var row = document.getElementById('t');
   //   for (var j = t6.length -1; j >= 0; j--) {
   //     console.log(t6);
   //   }
   // } // end horizontalWin function
 
+  // declare nav variable
+  var nav = document.getElementById('nav');
+
+  // create loop to add navbar
+  for (var n = 1; n <= 1; n++) {
+    var navbar = document.createElement('div');
+    navbar.className = "navbar";
+    navbar.id = "z" + n;
+    nav.appendChild(navbar);
+
   // create loop to add 7 buttons
-  for (var x = 1; x <= 7; x++) {
-    var buttons = document.createElement('button');
-    buttons.className = "buttonstyle";
-    buttons.id = "b" + x;
-    nav.appendChild(buttons);
-    buttons.addEventListener("click", buttonClick);
+    for (var x = 1; x <= 7; x++) {
+      var buttons = document.createElement('button');
+      buttons.className = "buttonstyle";
+      buttons.id = "b" + x;
+      navbar.appendChild(buttons);
+      buttons.addEventListener("click", buttonClick);
+    };
   };
 
   // declare container variable
   var container = document.getElementById('container');
-  // console.log(container);
-  // var playerTurn = document.getElementById('playerTurn');
 
   // create loop to add 7 columns
   for (var i = 1; i <= 7; i++) {
@@ -291,5 +300,6 @@ window.onload = function() {
       column.appendChild(token);
     };
   };
+
 
 }; // close window.onload
