@@ -36,7 +36,7 @@ window.onload = function() {
       // console.log(player);
 
       verticalWin();
-      // horizontalWin();
+      horizontalWin();
     }; // end buttonClick function
 
   var verticalWin = function() {
@@ -250,17 +250,216 @@ window.onload = function() {
 
   }; // end verticalWin function
 
-  // var horizontalWin = function() {
-  //   var redwins1 = 0, redwins2 = 0, redwins3 = 0, redwins4 = 0,
-  //       redwins5 = 0, redwins6 = 0, redwins7 = 0;
-  //   var yellowwins1 = 0, yellowwins2 = 0, yellowwins3 = 0, yellowwins4 = 0,
-  //       yellowwins5 = 0, yellowwins6 = 0,  yellowwins7 = 0;
-  //   // var row = document.getElementById('t' + this.id.charAt(1));
-  //   // var row = document.getElementById('t');
-  //   for (var j = t6.length -1; j >= 0; j--) {
-  //     console.log(t6);
-  //   }
-  // } // end horizontalWin function
+  var horizontalWin = function() {
+    var redwins1 = 0, redwins2 = 0, redwins3 = 0, redwins4 = 0,
+        redwins5 = 0, redwins6 = 0, redwins7 = 0;
+    var yellowwins1 = 0, yellowwins2 = 0, yellowwins3 = 0, yellowwins4 = 0,
+        yellowwins5 = 0, yellowwins6 = 0, yellowwins7 = 0;
+
+    for (var j = t6.length -1; j >= 0; j--) {
+      if (t6[j].classList.contains('red')) {
+        redwins7++
+        console.log("I am red", redwins7);
+        if (redwins7 === 4) {
+          alert("Red Wins!")
+          break;
+        }
+      }
+      if (t6[j].classList.contains('yellow')) {
+          redwins7 = 0;
+          // console.log("redwins2 is reset");
+      }
+      if (t6[j].classList.contains('yellow')) {
+        yellowwins7++
+        // console.log("I am yellow", yellowwins2);
+        if (yellowwins7 === 4) {
+          alert("Yellow Wins!")
+          break;
+        }
+      } else if (t6[j].classList.contains('red')) {
+          yellowwins7 = 0;
+          // console.log("yellowwins is reset");
+      } else {
+          //  console.log("space is empty");
+          break;
+      }; // end if statement
+    } // end for loop
+
+    for (var j = t6.length -1; j >= 0; j--) {
+      if (t6[j].classList.contains('red')) {
+        redwins6++
+        console.log("I am red", redwins6);
+        if (redwins6 === 4) {
+          alert("Red Wins!")
+          break;
+        }
+      }
+      if (t6[j].classList.contains('yellow')) {
+          redwins6 = 0;
+          // console.log("redwins2 is reset");
+      }
+      if (t6[j].classList.contains('yellow')) {
+        yellowwins6++
+        // console.log("I am yellow", yellowwins2);
+        if (yellowwins6 === 4) {
+          alert("Yellow Wins!")
+          break;
+        }
+      } else if (t6[j].classList.contains('red')) {
+          yellowwins6 = 0;
+          // console.log("yellowwins is reset");
+      } else {
+          //  console.log("space is empty");
+          break;
+      }; // end if statement
+    } // end for loop
+
+    for (var j = t5.length -1; j >= 0; j--) {
+      if (t5[j].classList.contains('red')) {
+        redwins5++
+        console.log("I am red", redwins5);
+        if (redwins5 === 4) {
+          alert("Red Wins!")
+          break;
+        }
+      }
+      if (t5[j].classList.contains('yellow')) {
+          redwins5 = 0;
+          // console.log("redwins2 is reset");
+      }
+      if (t5[j].classList.contains('yellow')) {
+        yellowwins5++
+        // console.log("I am yellow", yellowwins2);
+        if (yellowwins5 === 4) {
+          alert("Yellow Wins!")
+          break;
+        }
+      } else if (t5[j].classList.contains('red')) {
+          yellowwins5 = 0;
+          // console.log("yellowwins is reset");
+      } else {
+          //  console.log("space is empty");
+          break;
+      }; // end if statement
+    } // end for loop
+
+    for (var j = t4.length -1; j >= 0; j--) {
+      if (t4[j].classList.contains('red')) {
+        redwins4++
+        console.log("I am red", redwins4);
+        if (redwins4 === 4) {
+          alert("Red Wins!")
+          break;
+        }
+      }
+      if (t4[j].classList.contains('yellow')) {
+          redwins4 = 0;
+          // console.log("redwins2 is reset");
+      }
+      if (t4[j].classList.contains('yellow')) {
+        yellowwins4++
+        // console.log("I am yellow", yellowwins2);
+        if (yellowwins4 === 4) {
+          alert("Yellow Wins!")
+          break;
+        }
+      } else if (t4[j].classList.contains('red')) {
+          yellowwins4 = 0;
+          // console.log("yellowwins is reset");
+      } else {
+          //  console.log("space is empty");
+          break;
+      }; // end if statement
+    } // end for loop
+
+    for (var j = t3.length -1; j >= 0; j--) {
+      if (t3[j].classList.contains('red')) {
+        redwins3++
+        console.log("I am red", redwins3);
+        if (redwins3 === 4) {
+          alert("Red Wins!")
+          break;
+        }
+      }
+      if (t3[j].classList.contains('yellow')) {
+          redwins3 = 0;
+          // console.log("redwins2 is reset");
+      }
+      if (t3[j].classList.contains('yellow')) {
+        yellowwins3++
+        // console.log("I am yellow", yellowwins2);
+        if (yellowwins3 === 4) {
+          alert("Yellow Wins!")
+          break;
+        }
+      } else if (t3[j].classList.contains('red')) {
+          yellowwins3 = 0;
+          // console.log("yellowwins is reset");
+      } else {
+          //  console.log("space is empty");
+          break;
+      }; // end if statement
+    } // end for loop
+
+    for (var j = t2.length -1; j >= 0; j--) {
+      if (t2[j].classList.contains('red')) {
+        redwins2++
+        console.log("I am red", redwins2);
+        if (redwins2 === 4) {
+          alert("Red Wins!")
+          break;
+        }
+      }
+      if (t2[j].classList.contains('yellow')) {
+          redwins2 = 0;
+          // console.log("redwins2 is reset");
+      }
+      if (t2[j].classList.contains('yellow')) {
+        yellowwins2++
+        // console.log("I am yellow", yellowwins2);
+        if (yellowwins2 === 4) {
+          alert("Yellow Wins!")
+          break;
+        }
+      } else if (t2[j].classList.contains('red')) {
+          yellowwins2 = 0;
+          // console.log("yellowwins is reset");
+      } else {
+          //  console.log("space is empty");
+          break;
+      }; // end if statement
+    } // end for loop
+
+    for (var j = t1.length -1; j >= 0; j--) {
+      if (t1[j].classList.contains('red')) {
+        redwins1++
+        console.log("I am red", redwins1);
+        if (redwins1 === 4) {
+          alert("Red Wins!")
+          break;
+        }
+      }
+      if (t1[j].classList.contains('yellow')) {
+          redwins1 = 0;
+          // console.log("redwins2 is reset");
+      }
+      if (t1[j].classList.contains('yellow')) {
+        yellowwins1++
+        // console.log("I am yellow", yellowwins2);
+        if (yellowwins1 === 4) {
+          alert("Yellow Wins!")
+          break;
+        }
+      } else if (t1[j].classList.contains('red')) {
+          yellowwins1 = 0;
+          // console.log("yellowwins is reset");
+      } else {
+          //  console.log("space is empty");
+          break;
+      }; // end if statement
+    } // end for loop
+
+  } // end horizontalWin function
 
   // declare nav variable
   var nav = document.getElementById('nav');
@@ -300,6 +499,17 @@ window.onload = function() {
       column.appendChild(token);
     };
   };
+
+  // create loop to add 6 rows
+//   for (var r = 1; r <= 6; r++) {
+//     var row = document.createElement('div');
+//     row.className = "row";
+//     row.id = "r" + r;
+//     container.appendChild(row);
+//
+//   // create loop to add 7 tokens inside rows
+//
+// };
 
 
 }; // close window.onload
