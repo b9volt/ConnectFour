@@ -509,7 +509,688 @@ window.onload = function() {
         }
       } // end yellowwins2
 
-      
+      if (c2.children[3].classList.contains('red')) {
+        redwins3++
+        if (c3.children[2].classList.contains('red')) {
+          redwins3++
+          if (c4.children[1].classList.contains('red')) {
+            redwins3++
+            if (c5.children[0].classList.contains('red')) {
+              redwins3++
+              if (redwins3 === 4) {
+                alert("Red Wins!")
+              }
+            }
+          }
+        }
+      } // end redwins3
+      if (c2.children[3].classList.contains('yellow')) {
+        yellowwins3++
+        if (c3.children[2].classList.contains('yellow')) {
+          yellowwins3++
+          if (c4.children[1].classList.contains('yellow')) {
+            yellowwins3++
+            if (c5.children[0].classList.contains('yellow')) {
+              yellowwins3++
+              if (yellowwins3 === 4) {
+                alert("Yellow Wins!")
+              }
+            }
+          }
+        }
+      } // end yellowwins3
+
+      if (c1.children[5].classList.contains('red')) {
+        redwins4++
+        if (c2.children[4].classList.contains('red')) {
+          redwins4++
+          if (c3.children[3].classList.contains('red')) {
+            redwins4++
+            if (c4.children[2].classList.contains('red')) {
+              redwins4++
+              if (redwins4 === 4) {
+                alert("Red Wins!")
+              }
+            }
+          }
+        }
+      } // end redwins4
+      if (c1.children[5].classList.contains('yellow')) {
+        yellowwins4++
+        if (c2.children[4].classList.contains('yellow')) {
+          yellowwins4++
+          if (c3.children[3].classList.contains('yellow')) {
+            yellowwins4++
+            if (c4.children[2].classList.contains('yellow')) {
+              yellowwins4++
+              if (yellowwins4 === 4) {
+                alert("Yellow Wins!")
+              }
+            }
+          }
+        }
+      } // end yellowwins4
+
+      if (c2.children[4].classList.contains('red')) {
+        redwins5++
+        if (c3.children[3].classList.contains('red')) {
+          redwins5++
+          if (c4.children[2].classList.contains('red')) {
+            redwins5++
+            if (c5.children[1].classList.contains('red')) {
+              redwins5++
+              if (redwins5 === 4) {
+                alert("Red Wins!")
+              }
+            }
+          }
+        }
+      } // end redwins5
+      if (c2.children[4].classList.contains('yellow')) {
+        yellowwins5++
+        if (c3.children[3].classList.contains('yellow')) {
+          yellowwins5++
+          if (c4.children[2].classList.contains('yellow')) {
+            yellowwins5++
+            if (c5.children[1].classList.contains('yellow')) {
+              yellowwins5++
+              if (yellowwins5 === 4) {
+                alert("Yellow Wins!")
+              }
+            }
+          }
+        }
+      } // end yellowwins5
+
+      if (c3.children[3].classList.contains('red')) {
+        redwins6++
+        if (c4.children[2].classList.contains('red')) {
+          redwins6++
+          if (c5.children[1].classList.contains('red')) {
+            redwins6++
+            if (c6.children[0].classList.contains('red')) {
+              redwins6++
+              if (redwins6 === 4) {
+                alert("Red Wins!")
+              }
+            }
+          }
+        }
+      } // end redwins6
+      if (c3.children[3].classList.contains('yellow')) {
+        yellowwins6++
+        if (c4.children[2].classList.contains('yellow')) {
+          yellowwins6++
+          if (c5.children[1].classList.contains('yellow')) {
+            yellowwins6++
+            if (c6.children[0].classList.contains('yellow')) {
+              yellowwins6++
+              if (yellowwins6 === 4) {
+                alert("Yellow Wins!")
+              }
+            }
+          }
+        }
+      } // end yellowwins6
+
+      if (c2.children[5].classList.contains('red')) {
+        redwins7++
+        if (c3.children[4].classList.contains('red')) {
+          redwins7++
+          if (c4.children[3].classList.contains('red')) {
+            redwins7++
+            if (c5.children[2].classList.contains('red')) {
+              redwins7++
+              if (redwins7 === 4) {
+                alert("Red Wins!")
+              }
+            }
+          }
+        }
+      } // end redwins7
+      if (c2.children[5].classList.contains('yellow')) {
+        yellowwins7++
+        if (c3.children[4].classList.contains('yellow')) {
+          yellowwins7++
+          if (c4.children[3].classList.contains('yellow')) {
+            yellowwins7++
+            if (c5.children[2].classList.contains('yellow')) {
+              yellowwins7++
+              if (yellowwins7 === 4) {
+                alert("Yellow Wins!")
+              }
+            }
+          }
+        }
+      } // end yellowwins7
+
+      if (c3.children[4].classList.contains('red')) {
+        redwins8++
+        if (c4.children[3].classList.contains('red')) {
+          redwins8++
+          if (c5.children[2].classList.contains('red')) {
+            redwins8++
+            if (c6.children[1].classList.contains('red')) {
+              redwins8++
+              if (redwins8 === 4) {
+                alert("Red Wins!")
+              }
+            }
+          }
+        }
+      } // end redwins8
+      if (c3.children[4].classList.contains('yellow')) {
+        yellowwins8++
+        if (c4.children[3].classList.contains('yellow')) {
+          yellowwins8++
+          if (c5.children[2].classList.contains('yellow')) {
+            yellowwins8++
+            if (c6.children[1].classList.contains('yellow')) {
+              yellowwins8++
+              if (yellowwins8 === 4) {
+                alert("Yellow Wins!")
+              }
+            }
+          }
+        }
+      } // end yellowwins8
+
+      if (c4.children[3].classList.contains('red')) {
+        redwins9++
+        if (c5.children[2].classList.contains('red')) {
+          redwins9++
+          if (c6.children[1].classList.contains('red')) {
+            redwins9++
+            if (c7.children[0].classList.contains('red')) {
+              redwins9++
+              if (redwins9 === 4) {
+                alert("Red Wins!")
+              }
+            }
+          }
+        }
+      } // end redwins9
+      if (c4.children[3].classList.contains('yellow')) {
+        yellowwins9++
+        if (c5.children[2].classList.contains('yellow')) {
+          yellowwins9++
+          if (c6.children[1].classList.contains('yellow')) {
+            yellowwins9++
+            if (c7.children[0].classList.contains('yellow')) {
+              yellowwins9++
+              if (yellowwins9 === 4) {
+                alert("Yellow Wins!")
+              }
+            }
+          }
+        }
+      } // end yellowwins9
+
+      if (c3.children[5].classList.contains('red')) {
+        redwins10++
+        if (c4.children[4].classList.contains('red')) {
+          redwins10++
+          if (c5.children[3].classList.contains('red')) {
+            redwins10++
+            if (c6.children[2].classList.contains('red')) {
+              redwins10++
+              if (redwins10 === 4) {
+                alert("Red Wins!")
+              }
+            }
+          }
+        }
+      } // end redwins10
+      if (c3.children[5].classList.contains('yellow')) {
+        yellowwins10++
+        if (c4.children[4].classList.contains('yellow')) {
+          yellowwins10++
+          if (c5.children[3].classList.contains('yellow')) {
+            yellowwins10++
+            if (c6.children[2].classList.contains('yellow')) {
+              yellowwins10++
+              if (yellowwins10 === 4) {
+                alert("Yellow Wins!")
+              }
+            }
+          }
+        }
+      } // end yellowwins10
+
+      if (c4.children[4].classList.contains('red')) {
+        redwins11++
+        if (c5.children[3].classList.contains('red')) {
+          redwins11++
+          if (c6.children[2].classList.contains('red')) {
+            redwins11++
+            if (c7.children[1].classList.contains('red')) {
+              redwins11++
+              if (redwins11 === 4) {
+                alert("Red Wins!")
+              }
+            }
+          }
+        }
+      } // end redwins11
+      if (c4.children[4].classList.contains('yellow')) {
+        yellowwins11++
+        if (c5.children[3].classList.contains('yellow')) {
+          yellowwins11++
+          if (c6.children[2].classList.contains('yellow')) {
+            yellowwins11++
+            if (c7.children[1].classList.contains('yellow')) {
+              yellowwins11++
+              if (yellowwins11 === 4) {
+                alert("Yellow Wins!")
+              }
+            }
+          }
+        }
+      } // end yellowwins11
+
+      if (c4.children[5].classList.contains('red')) {
+        redwins12++
+        if (c5.children[4].classList.contains('red')) {
+          redwins12++
+          if (c6.children[3].classList.contains('red')) {
+            redwins12++
+            if (c7.children[2].classList.contains('red')) {
+              redwins12++
+              if (redwins12 === 4) {
+                alert("Red Wins!")
+              }
+            }
+          }
+        }
+      } // end redwins12
+      if (c4.children[5].classList.contains('yellow')) {
+        yellowwins12++
+        if (c5.children[4].classList.contains('yellow')) {
+          yellowwins12++
+          if (c6.children[3].classList.contains('yellow')) {
+            yellowwins12++
+            if (c7.children[2].classList.contains('yellow')) {
+              yellowwins12++
+              if (yellowwins12 === 4) {
+                alert("Yellow Wins!")
+              }
+            }
+          }
+        }
+      } // end yellowwins12
+
+      if (c7.children[3].classList.contains('red')) {
+        redwins13++
+        if (c6.children[2].classList.contains('red')) {
+          redwins13++
+          if (c5.children[1].classList.contains('red')) {
+            redwins13++
+            if (c4.children[0].classList.contains('red')) {
+              redwins13++
+              if (redwins13 === 4) {
+                alert("Red Wins!")
+              }
+            }
+          }
+        }
+      } // end redwins13
+      if (c7.children[3].classList.contains('yellow')) {
+        yellowwins13++
+        if (c6.children[2].classList.contains('yellow')) {
+          yellowwins13++
+          if (c5.children[1].classList.contains('yellow')) {
+            yellowwins13++
+            if (c4.children[0].classList.contains('yellow')) {
+              yellowwins13++
+              if (yellowwins13 === 4) {
+                alert("Yellow Wins!")
+              }
+            }
+          }
+        }
+      } // end yellowwins13
+
+      if (c7.children[4].classList.contains('red')) {
+        redwins14++
+        if (c6.children[3].classList.contains('red')) {
+          redwins14++
+          if (c5.children[2].classList.contains('red')) {
+            redwins14++
+            if (c4.children[1].classList.contains('red')) {
+              redwins14++
+              if (redwins14 === 4) {
+                alert("Red Wins!")
+              }
+            }
+          }
+        }
+      } // end redwins14
+      if (c7.children[4].classList.contains('yellow')) {
+        yellowwins14++
+        if (c6.children[3].classList.contains('yellow')) {
+          yellowwins14++
+          if (c5.children[2].classList.contains('yellow')) {
+            yellowwins14++
+            if (c4.children[1].classList.contains('yellow')) {
+              yellowwins14++
+              if (yellowwins14 === 4) {
+                alert("Yellow Wins!")
+              }
+            }
+          }
+        }
+      } // end yellowwins14
+
+      if (c6.children[3].classList.contains('red')) {
+        redwins15++
+        if (c5.children[2].classList.contains('red')) {
+          redwins15++
+          if (c4.children[1].classList.contains('red')) {
+            redwins15++
+            if (c3.children[0].classList.contains('red')) {
+              redwins15++
+              if (redwins15 === 4) {
+                alert("Red Wins!")
+              }
+            }
+          }
+        }
+      } // end redwins15
+      if (c6.children[3].classList.contains('yellow')) {
+        yellowwins15++
+        if (c5.children[2].classList.contains('yellow')) {
+          yellowwins15++
+          if (c4.children[1].classList.contains('yellow')) {
+            yellowwins15++
+            if (c3.children[0].classList.contains('yellow')) {
+              yellowwins15++
+              if (yellowwins15 === 4) {
+                alert("Yellow Wins!")
+              }
+            }
+          }
+        }
+      } // end yellowwins15
+
+      if (c7.children[5].classList.contains('red')) {
+        redwins16++
+        if (c6.children[4].classList.contains('red')) {
+          redwins16++
+          if (c5.children[3].classList.contains('red')) {
+            redwins16++
+            if (c4.children[2].classList.contains('red')) {
+              redwins16++
+              if (redwins16 === 4) {
+                alert("Red Wins!")
+              }
+            }
+          }
+        }
+      } // end redwins16
+      if (c7.children[5].classList.contains('yellow')) {
+        yellowwins16++
+        if (c6.children[4].classList.contains('yellow')) {
+          yellowwins16++
+          if (c5.children[3].classList.contains('yellow')) {
+            yellowwins16++
+            if (c4.children[2].classList.contains('yellow')) {
+              yellowwins16++
+              if (yellowwins16 === 4) {
+                alert("Yellow Wins!")
+              }
+            }
+          }
+        }
+      } // end yellowwins16
+
+      if (c6.children[4].classList.contains('red')) {
+        redwins17++
+        if (c5.children[3].classList.contains('red')) {
+          redwins17++
+          if (c4.children[2].classList.contains('red')) {
+            redwins17++
+            if (c3.children[1].classList.contains('red')) {
+              redwins17++
+              if (redwins17 === 4) {
+                alert("Red Wins!")
+              }
+            }
+          }
+        }
+      } // end redwins17
+      if (c6.children[4].classList.contains('yellow')) {
+        yellowwins17++
+        if (c5.children[3].classList.contains('yellow')) {
+          yellowwins17++
+          if (c4.children[2].classList.contains('yellow')) {
+            yellowwins17++
+            if (c3.children[1].classList.contains('yellow')) {
+              yellowwins17++
+              if (yellowwins17 === 4) {
+                alert("Yellow Wins!")
+              }
+            }
+          }
+        }
+      } // end yellowwins17
+
+      if (c5.children[3].classList.contains('red')) {
+        redwins18++
+        if (c4.children[2].classList.contains('red')) {
+          redwins18++
+          if (c3.children[1].classList.contains('red')) {
+            redwins18++
+            if (c2.children[0].classList.contains('red')) {
+              redwins18++
+              if (redwins18 === 4) {
+                alert("Red Wins!")
+              }
+            }
+          }
+        }
+      } // end redwins18
+      if (c5.children[3].classList.contains('yellow')) {
+        yellowwins18++
+        if (c4.children[2].classList.contains('yellow')) {
+          yellowwins18++
+          if (c3.children[1].classList.contains('yellow')) {
+            yellowwins18++
+            if (c2.children[0].classList.contains('yellow')) {
+              yellowwins18++
+              if (yellowwins18 === 4) {
+                alert("Yellow Wins!")
+              }
+            }
+          }
+        }
+      } // end yellowwins18
+
+      if (c6.children[5].classList.contains('red')) {
+        redwins19++
+        if (c5.children[4].classList.contains('red')) {
+          redwins19++
+          if (c4.children[3].classList.contains('red')) {
+            redwins19++
+            if (c3.children[2].classList.contains('red')) {
+              redwins19++
+              if (redwins19 === 4) {
+                alert("Red Wins!")
+              }
+            }
+          }
+        }
+      } // end redwins19
+      if (c6.children[5].classList.contains('yellow')) {
+        yellowwins19++
+        if (c5.children[4].classList.contains('yellow')) {
+          yellowwins19++
+          if (c4.children[3].classList.contains('yellow')) {
+            yellowwins19++
+            if (c3.children[2].classList.contains('yellow')) {
+              yellowwins19++
+              if (yellowwins19 === 4) {
+                alert("Yellow Wins!")
+              }
+            }
+          }
+        }
+      } // end yellowwins19
+
+      if (c5.children[4].classList.contains('red')) {
+        redwins20++
+        if (c4.children[3].classList.contains('red')) {
+          redwins20++
+          if (c3.children[2].classList.contains('red')) {
+            redwins20++
+            if (c2.children[1].classList.contains('red')) {
+              redwins20++
+              if (redwins20 === 4) {
+                alert("Red Wins!")
+              }
+            }
+          }
+        }
+      } // end redwins20
+      if (c5.children[4].classList.contains('yellow')) {
+        yellowwins20++
+        if (c4.children[3].classList.contains('yellow')) {
+          yellowwins20++
+          if (c3.children[2].classList.contains('yellow')) {
+            yellowwins20++
+            if (c2.children[1].classList.contains('yellow')) {
+              yellowwins20++
+              if (yellowwins20 === 4) {
+                alert("Yellow Wins!")
+              }
+            }
+          }
+        }
+      } // end yellowwins20
+
+      if (c4.children[3].classList.contains('red')) {
+        redwins21++
+        if (c3.children[2].classList.contains('red')) {
+          redwins21++
+          if (c2.children[1].classList.contains('red')) {
+            redwins21++
+            if (c1.children[0].classList.contains('red')) {
+              redwins21++
+              if (redwins21 === 4) {
+                alert("Red Wins!")
+              }
+            }
+          }
+        }
+      } // end redwins21
+      if (c4.children[3].classList.contains('yellow')) {
+        yellowwins21++
+        if (c3.children[2].classList.contains('yellow')) {
+          yellowwins21++
+          if (c2.children[1].classList.contains('yellow')) {
+            yellowwins21++
+            if (c1.children[0].classList.contains('yellow')) {
+              yellowwins21++
+              if (yellowwins21 === 4) {
+                alert("Yellow Wins!")
+              }
+            }
+          }
+        }
+      } // end yellowwins21
+
+      if (c5.children[5].classList.contains('red')) {
+        redwins22++
+        if (c4.children[4].classList.contains('red')) {
+          redwins22++
+          if (c3.children[3].classList.contains('red')) {
+            redwins22++
+            if (c2.children[2].classList.contains('red')) {
+              redwins22++
+              if (redwins22 === 4) {
+                alert("Red Wins!")
+              }
+            }
+          }
+        }
+      } // end redwins22
+      if (c5.children[5].classList.contains('yellow')) {
+        yellowwins22++
+        if (c4.children[4].classList.contains('yellow')) {
+          yellowwins22++
+          if (c3.children[3].classList.contains('yellow')) {
+            yellowwins22++
+            if (c2.children[2].classList.contains('yellow')) {
+              yellowwins22++
+              if (yellowwins22 === 4) {
+                alert("Yellow Wins!")
+              }
+            }
+          }
+        }
+      } // end yellowwins22
+
+      if (c4.children[4].classList.contains('red')) {
+        redwins23++
+        if (c3.children[3].classList.contains('red')) {
+          redwins23++
+          if (c2.children[2].classList.contains('red')) {
+            redwins23++
+            if (c1.children[1].classList.contains('red')) {
+              redwins23++
+              if (redwins23 === 4) {
+                alert("Red Wins!")
+              }
+            }
+          }
+        }
+      } // end redwins23
+      if (c4.children[4].classList.contains('yellow')) {
+        yellowwins23++
+        if (c3.children[3].classList.contains('yellow')) {
+          yellowwins23++
+          if (c2.children[2].classList.contains('yellow')) {
+            yellowwins23++
+            if (c1.children[1].classList.contains('yellow')) {
+              yellowwins23++
+              if (yellowwins23 === 4) {
+                alert("Yellow Wins!")
+              }
+            }
+          }
+        }
+      } // end yellowwins23
+
+      if (c4.children[5].classList.contains('red')) {
+        redwins24++
+        if (c3.children[4].classList.contains('red')) {
+          redwins24++
+          if (c2.children[3].classList.contains('red')) {
+            redwins24++
+            if (c1.children[2].classList.contains('red')) {
+              redwins24++
+              if (redwins24 === 4) {
+                alert("Red Wins!")
+              }
+            }
+          }
+        }
+      } // end redwins24
+      if (c4.children[5].classList.contains('yellow')) {
+        yellowwins24++
+        if (c3.children[4].classList.contains('yellow')) {
+          yellowwins24++
+          if (c2.children[3].classList.contains('yellow')) {
+            yellowwins24++
+            if (c1.children[2].classList.contains('yellow')) {
+              yellowwins24++
+              if (yellowwins24 === 4) {
+                alert("Yellow Wins!")
+              }
+            }
+          }
+        }
+      } // end yellowwins24
+
   } // end diagonalWin function
 
   // declare nav variable
