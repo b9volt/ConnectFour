@@ -54,7 +54,7 @@ window.onload = function() {
         redwins1++
         // console.log("I am red", redwins1);
         if (redwins1 === 4) {
-          alert("Red Wins!")
+          alert("Red Wins!");
           break;
         }
       }
