@@ -1,45 +1,92 @@
 window.onload = function() {
 
-  // declare player variable.
-  var player = 1;
+  var turn = 1;
   // function for buttonClick to be called when user clicks a button
   var buttonClick = function() {
-      // token.classList.add("red");
-      // console.log("red");
-      // console.log("This is button id " + this.id);
-      // this.id calls on the button that is pressed
-      // console.log(this.id.charAt(1));
+      console.log("This is button # " + this.id.charAt(1));
       // charAt(1) calls the index of the button
-      // By adding the id of 'c', it also references its coresponding column
+      // By adding the id of 'c', it also references the coresponding column
       var column = document.getElementById('c' + this.id.charAt(1));
+      var buttons = document.getElementById('b' + this.id.charAt(1));
+      var pturn = document.getElementById('pturn');
       // console.log('These are the columns children: ', column.children);
-      // console.log('This is the last child of the column: ', column.children[column.children.length - 1]);
-      // var lastChild = column.children[column.children.length - 1];
-      // console.log(lastChild);
-      // lastChild.classList.add('red');
       // Loop backwards by accessing last child with column.length - 1.
       for (var i = column.children.length -1; i >= 0; i--) {
-        // console.log(p);
         if (column.children[i].classList.contains('red') || column.children[i].classList.contains('yellow')) {
           continue;
         } else {
-          if (player == 1) {
+          if (turn == 1) {
             column.children[i].classList.add('red');
-            player = 0;
+            turn = 0;
           } else {
             column.children[i].classList.add('yellow');
-            player = 1;
+            turn = 1;
           }
+          console.log(turn);
+          if (turn == 1) {
+            buttons.className = "rbutton";
+            pturn.className = "rbutton";
+            console.log("Player 1's turn");
+          }
+          else {
+            buttons.className = "ybutton";
+            pturn.className = "ybutton";
+            console.log("Player 2's turn");
+          };
           break;
         } // end if statement
       } // end for loop
-      // console.log(player);
 
       verticalWin();
       horizontalWin();
       diagonalWin();
     }; // end buttonClick function
 
+    // var buttonClick = function() {
+    //
+    // }
+
+  // declare nav variable
+  var nav = document.getElementById('nav');
+
+  // create loop to add navbar
+  for (var n = 1; n <= 1; n++) {
+    var navbar = document.createElement('div');
+    navbar.className = "navbar";
+    nav.appendChild(navbar);
+
+  // create loop to add 7 buttons
+    for (var x = 1; x <= 7; x++) {
+      var buttons = document.createElement('navButton');
+      buttons.id = "b" + x;
+      navbar.appendChild(buttons);
+      buttons.className = "navButton";
+      buttons.addEventListener("click", buttonClick);
+
+
+    }; // end button loop
+  }; // end navbar loop
+
+  // declare container variable
+  var container = document.getElementById('container');
+
+  // create loop to add 7 columns
+  for (var i = 1; i <= 7; i++) {
+    var column = document.createElement('div');
+    column.className = "column";
+    column.id = "c" + i;
+    container.appendChild(column);
+
+  // create loop to add 6 tokens inside columns
+    for (var j = 1; j <= 6; j++) {
+      var token = document.createElement('div');
+      token.className = "token";
+      token.id = "t" + j;
+      column.appendChild(token);
+    };
+  };
+
+  var reset = document.getElementsByName('name')
 
  // Vertical Win
  // ==============================
@@ -441,16 +488,16 @@ window.onload = function() {
 
       if (c1.children[3].classList.contains('red')) {
         redwins1++
-        console.log("redwins1", redwins1);
+        // console.log("redwins1", redwins1);
         if (c2.children[2].classList.contains('red')) {
           redwins1++
-          console.log("redwins1", redwins1);
+          // console.log("redwins1", redwins1);
           if (c3.children[1].classList.contains('red')) {
             redwins1++
-            console.log("redwins1", redwins1);
+            // console.log("redwins1", redwins1);
             if (c4.children[0].classList.contains('red')) {
               redwins1++
-              console.log("redwins1", redwins1);
+              // console.log("redwins1", redwins1);
               if (redwins1 === 4) {
                 alert("Red Wins!")
               }
@@ -460,16 +507,16 @@ window.onload = function() {
       } // end redwins1
       if (c1.children[3].classList.contains('yellow')) {
         yellowwins1++
-        console.log("yellowwins1", yellowwins1);
+        // console.log("yellowwins1", yellowwins1);
         if (c2.children[2].classList.contains('yellow')) {
           yellowwins1++
-          console.log("yellowwins1", yellowwins1);
+          // console.log("yellowwins1", yellowwins1);
           if (c3.children[1].classList.contains('yellow')) {
             yellowwins1++
-            console.log("yellowwins1", yellowwins1);
+            // console.log("yellowwins1", yellowwins1);
             if (c4.children[0].classList.contains('yellow')) {
               yellowwins1++
-              console.log("yellowwins1", yellowwins1);
+              // console.log("yellowwins1", yellowwins1);
               if (yellowwins1 === 4) {
                 alert("Yellow Wins!")
               }
@@ -1192,44 +1239,5 @@ window.onload = function() {
       } // end yellowwins24
 
   } // end diagonalWin function
-
-  // declare nav variable
-  var nav = document.getElementById('nav');
-
-  // create loop to add navbar
-  for (var n = 1; n <= 1; n++) {
-    var navbar = document.createElement('div');
-    navbar.className = "navbar";
-    navbar.id = "z" + n;
-    nav.appendChild(navbar);
-
-  // create loop to add 7 buttons
-    for (var x = 1; x <= 7; x++) {
-      var buttons = document.createElement('button');
-      buttons.className = "buttonstyle";
-      buttons.id = "b" + x;
-      navbar.appendChild(buttons);
-      buttons.addEventListener("click", buttonClick);
-    };
-  };
-
-  // declare container variable
-  var container = document.getElementById('container');
-
-  // create loop to add 7 columns
-  for (var i = 1; i <= 7; i++) {
-    var column = document.createElement('div');
-    column.className = "column";
-    column.id = "c" + i;
-    container.appendChild(column);
-
-  // create loop to add 6 tokens inside columns
-    for (var j = 1; j <= 6; j++) {
-      var token = document.createElement('div');
-      token.className = "token";
-      token.id = "t" + j;
-      column.appendChild(token);
-    };
-  };
 
 }; // close window.onload
