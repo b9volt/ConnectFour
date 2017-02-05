@@ -42,10 +42,6 @@ window.onload = function() {
       diagonalWin();
     }; // end buttonClick function
 
-    // var buttonClick = function() {
-    //
-    // }
-
   // declare nav variable
   var nav = document.getElementById('nav');
 
